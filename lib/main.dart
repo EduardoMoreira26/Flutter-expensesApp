@@ -56,14 +56,16 @@ class MyHomePage extends StatelessWidget {
                         vertical: 10,
                       ),
                       decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
                         border: Border.all(
+                          
                           color: Colors.purple,
                           width: 2,
                         ),
                       ),
                       padding: EdgeInsets.all(10),
                       child: Text(
-                        transaction.value.toString(),
+                        'R\$ ${transaction.value.toStringAsFixed(2)}',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
