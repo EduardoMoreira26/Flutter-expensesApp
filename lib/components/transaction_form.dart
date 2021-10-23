@@ -24,20 +24,23 @@ class TransactionForm extends StatelessWidget {
                 labelText: 'Valor (R\$):',
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                // ignore: deprecated_member_use
-                RaisedButton(
-                  child: Text('Nova Transação'),
-                  color: Colors.purple,
-                  textColor: Colors.white,
-                  onPressed: () {
-                    // print(titleController.text);
-                    // print(valueController.text);
-                  },
-                ),
-              ],
+            Container(
+              margin: EdgeInsets.only(top: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  // ignore: deprecated_member_use
+                  RaisedButton(
+                    child: Text('Nova Transação'),
+                    color: Colors.purple,
+                    textColor: Colors.white,
+                    onPressed: () {
+                      // print(titleController.text);
+                      // print(valueController.text);
+                    },
+                  ),
+                ],
+              ),
             ),
           ],
         ),
