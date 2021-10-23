@@ -22,24 +22,6 @@ class _TransactionUserState extends State<TransactionUser> {
       title: 'Conta Mercado',
       value: 150.01,
       date: DateTime.now(),
-    ),
-     Transaction(
-      id: 't2',
-      title: 'Conta Comida',
-      value: 150.01,
-      date: DateTime.now(),
-    ),
-     Transaction(
-      id: 't2',
-      title: 'Conta de luz',
-      value: 150.01,
-      date: DateTime.now(),
-    ),
-     Transaction(
-      id: 't2',
-      title: 'Conta net',
-      value: 150.01,
-      date: DateTime.now(),
     )
   ];
 
