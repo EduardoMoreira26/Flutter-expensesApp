@@ -26,13 +26,17 @@ class _TransactionUserState extends State<TransactionUser> {
     )
   ];
 
-  _addTransaction(String title, double value){
+  _addTransaction(String title, double value) {
     final newTransaction = Transaction(
       id: Random().nextDouble().toString(),
       title: title,
       value: value,
       date: DateTime.now(),
     );
+
+    setState(() {
+      _transactions.add(newTransaction);
+    });
   }
 
   @override
@@ -40,7 +44,7 @@ class _TransactionUserState extends State<TransactionUser> {
     return Column(
       children: [
         TransactionList(_transactions),
-        TransactionForm(),
+        TransactionForm(_addTransaction),
       ],
     );
   }
