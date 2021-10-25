@@ -18,6 +18,7 @@ class ExpensesApp extends StatelessWidget {
         accentColor: Color.fromRGBO(4, 211, 97, 1),
         scaffoldBackgroundColor: Colors.white,
         fontFamily: 'Quicksand',
+        buttonColor: Colors.white,
       ),
     );
   }
